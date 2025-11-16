@@ -1,0 +1,313 @@
+<openpnp-machine>
+   <machine class="org.openpnp.machine.reference.ReferenceMachine" speed="0.53" auto-tool-select="true" safe-Z-park="true">
+      <axes>
+         <axis class="org.openpnp.machine.reference.axis.ReferenceControllerAxis" id="AXS17d226e240d84b80" name="X" type="X" driver-id="DRV187307950f5042f4" letter="X" backlash-compensation-method="None" backlash-speed-factor="0.25" limit-rotation="false" wrap-around-rotation="false" invert-linear-rotational="false" soft-limit-low-enabled="true" soft-limit-high-enabled="true" safe-zone-low-enabled="false" safe-zone-high-enabled="false" version="2.0">
+            <home-coordinate value="-437.0" units="Millimeters"/>
+            <acceptable-tolerance value="0.025" units="Millimeters"/>
+            <backlash-offset value="0.0" units="Millimeters"/>
+            <sneak-up-offset value="0.0" units="Millimeters"/>
+            <soft-limit-low value="-437.0" units="Millimeters"/>
+            <soft-limit-high value="0.0" units="Millimeters"/>
+            <safe-zone-low value="0.0" units="Millimeters"/>
+            <safe-zone-high value="0.0" units="Millimeters"/>
+            <feedrate-per-second value="333.3333333333333" units="Millimeters"/>
+            <acceleration-per-second-2 value="666.6666666666666" units="Millimeters"/>
+            <jerk-per-second-3 value="0.0" units="Millimeters"/>
+            <resolution>1.0E-4</resolution>
+         </axis>
+         <axis class="org.openpnp.machine.reference.axis.ReferenceControllerAxis" id="AXS17d226e240e0ed44" name="Y" type="Y" driver-id="DRV187307950f5042f4" letter="Y" backlash-compensation-method="None" backlash-speed-factor="0.25" limit-rotation="false" wrap-around-rotation="false" invert-linear-rotational="false" soft-limit-low-enabled="true" soft-limit-high-enabled="true" safe-zone-low-enabled="false" safe-zone-high-enabled="false" version="2.0">
+            <home-coordinate value="437.0" units="Millimeters"/>
+            <acceptable-tolerance value="0.025" units="Millimeters"/>
+            <backlash-offset value="0.0" units="Millimeters"/>
+            <sneak-up-offset value="0.0" units="Millimeters"/>
+            <soft-limit-low value="0.0" units="Millimeters"/>
+            <soft-limit-high value="437.0" units="Millimeters"/>
+            <safe-zone-low value="0.0" units="Millimeters"/>
+            <safe-zone-high value="0.0" units="Millimeters"/>
+            <feedrate-per-second value="333.3333333333333" units="Millimeters"/>
+            <acceleration-per-second-2 value="666.6666666666666" units="Millimeters"/>
+            <jerk-per-second-3 value="0.0" units="Millimeters"/>
+            <resolution>1.0E-4</resolution>
+         </axis>
+         <axis class="org.openpnp.machine.reference.axis.ReferenceControllerAxis" id="Z1" name="Z Nozzle 1" type="Z" driver-id="DRV187307950f5042f4" letter="Z1" backlash-compensation-method="None" backlash-speed-factor="0.25" limit-rotation="false" wrap-around-rotation="false" invert-linear-rotational="false" soft-limit-low-enabled="true" soft-limit-high-enabled="true" safe-zone-low-enabled="true" safe-zone-high-enabled="true" version="2.0">
+            <home-coordinate value="0.0" units="Millimeters"/>
+            <acceptable-tolerance value="0.025" units="Millimeters"/>
+            <backlash-offset value="0.0" units="Millimeters"/>
+            <sneak-up-offset value="0.0" units="Millimeters"/>
+            <soft-limit-low value="-15.0" units="Millimeters"/>
+            <soft-limit-high value="10.0" units="Millimeters"/>
+            <safe-zone-low value="-5.0" units="Millimeters"/>
+            <safe-zone-high value="5.0" units="Millimeters"/>
+            <feedrate-per-second value="100.0" units="Millimeters"/>
+            <acceleration-per-second-2 value="666.6666666666666" units="Millimeters"/>
+            <jerk-per-second-3 value="0.0" units="Millimeters"/>
+            <resolution>1.0E-4</resolution>
+         </axis>
+         <axis class="org.openpnp.machine.reference.axis.ReferenceControllerAxis" id="Z2" name="Z Nozzle 2" type="Z" driver-id="DRV187307950f5042f4" letter="Z2" backlash-compensation-method="None" backlash-speed-factor="0.25" limit-rotation="false" wrap-around-rotation="false" invert-linear-rotational="false" soft-limit-low-enabled="true" soft-limit-high-enabled="true" safe-zone-low-enabled="true" safe-zone-high-enabled="true" version="2.0">
+            <home-coordinate value="0.0" units="Millimeters"/>
+            <acceptable-tolerance value="0.025" units="Millimeters"/>
+            <backlash-offset value="0.0" units="Millimeters"/>
+            <sneak-up-offset value="0.0" units="Millimeters"/>
+            <soft-limit-low value="-15.0" units="Millimeters"/>
+            <soft-limit-high value="10.0" units="Millimeters"/>
+            <safe-zone-low value="-5.0" units="Millimeters"/>
+            <safe-zone-high value="5.0" units="Millimeters"/>
+            <feedrate-per-second value="100.0" units="Millimeters"/>
+            <acceleration-per-second-2 value="666.6666666666666" units="Millimeters"/>
+            <jerk-per-second-3 value="0.0" units="Millimeters"/>
+            <resolution>1.0E-4</resolution>
+         </axis>
+         <axis class="org.openpnp.machine.reference.axis.ReferenceControllerAxis" id="Z3" name="Z Nozzle 3" type="Z" driver-id="DRV187307950f5042f4" letter="Z3" backlash-compensation-method="None" backlash-speed-factor="0.25" limit-rotation="false" wrap-around-rotation="false" invert-linear-rotational="false" soft-limit-low-enabled="true" soft-limit-high-enabled="true" safe-zone-low-enabled="true" safe-zone-high-enabled="true" version="2.0">
+            <home-coordinate value="0.0" units="Millimeters"/>
+            <acceptable-tolerance value="0.025" units="Millimeters"/>
+            <backlash-offset value="0.0" units="Millimeters"/>
+            <sneak-up-offset value="0.0" units="Millimeters"/>
+            <soft-limit-low value="-15.0" units="Millimeters"/>
+            <soft-limit-high value="10.0" units="Millimeters"/>
+            <safe-zone-low value="-5.0" units="Millimeters"/>
+            <safe-zone-high value="5.0" units="Millimeters"/>
+            <feedrate-per-second value="100.0" units="Millimeters"/>
+            <acceleration-per-second-2 value="666.6666666666666" units="Millimeters"/>
+            <jerk-per-second-3 value="0.0" units="Millimeters"/>
+            <resolution>1.0E-4</resolution>
+         </axis>
+         <axis class="org.openpnp.machine.reference.axis.ReferenceControllerAxis" id="Z4" name="Z Nozzle 4" type="Z" driver-id="DRV187307950f5042f4" letter="Z4" backlash-compensation-method="None" backlash-speed-factor="0.25" limit-rotation="false" wrap-around-rotation="false" invert-linear-rotational="false" soft-limit-low-enabled="true" soft-limit-high-enabled="true" safe-zone-low-enabled="true" safe-zone-high-enabled="true" version="2.0">
+            <home-coordinate value="0.0" units="Millimeters"/>
+            <acceptable-tolerance value="0.025" units="Millimeters"/>
+            <backlash-offset value="0.0" units="Millimeters"/>
+            <sneak-up-offset value="0.0" units="Millimeters"/>
+            <soft-limit-low value="-15.0" units="Millimeters"/>
+            <soft-limit-high value="10.0" units="Millimeters"/>
+            <safe-zone-low value="-5.0" units="Millimeters"/>
+            <safe-zone-high value="5.0" units="Millimeters"/>
+            <feedrate-per-second value="100.0" units="Millimeters"/>
+            <acceleration-per-second-2 value="666.6666666666666" units="Millimeters"/>
+            <jerk-per-second-3 value="0.0" units="Millimeters"/>
+            <resolution>1.0E-4</resolution>
+         </axis>
+         <axis class="org.openpnp.machine.reference.axis.ReferenceControllerAxis" id="C1" name="C Nozzle 1" type="Rotation" driver-id="DRV187307950f5042f4" letter="C1" backlash-compensation-method="None" backlash-speed-factor="0.25" limit-rotation="true" wrap-around-rotation="false" invert-linear-rotational="false" soft-limit-low-enabled="false" soft-limit-high-enabled="false" safe-zone-low-enabled="false" safe-zone-high-enabled="false" version="2.0">
+            <home-coordinate value="0.0" units="Millimeters"/>
+            <acceptable-tolerance value="0.025" units="Millimeters"/>
+            <backlash-offset value="0.0" units="Millimeters"/>
+            <sneak-up-offset value="0.0" units="Millimeters"/>
+            <soft-limit-low value="-180.0" units="Millimeters"/>
+            <soft-limit-high value="180.0" units="Millimeters"/>
+            <safe-zone-low value="0.0" units="Millimeters"/>
+            <safe-zone-high value="0.0" units="Millimeters"/>
+            <feedrate-per-second value="3333.3333333333335" units="Millimeters"/>
+            <acceleration-per-second-2 value="6666.666666666667" units="Millimeters"/>
+            <jerk-per-second-3 value="0.0" units="Millimeters"/>
+            <resolution>1.0E-4</resolution>
+         </axis>
+         <axis class="org.openpnp.machine.reference.axis.ReferenceControllerAxis" id="C2" name="C Nozzle 2" type="Rotation" driver-id="DRV187307950f5042f4" letter="C2" backlash-compensation-method="None" backlash-speed-factor="0.25" limit-rotation="true" wrap-around-rotation="false" invert-linear-rotational="false" soft-limit-low-enabled="false" soft-limit-high-enabled="false" safe-zone-low-enabled="false" safe-zone-high-enabled="false" version="2.0">
+            <home-coordinate value="0.0" units="Millimeters"/>
+            <acceptable-tolerance value="0.025" units="Millimeters"/>
+            <backlash-offset value="0.0" units="Millimeters"/>
+            <sneak-up-offset value="0.0" units="Millimeters"/>
+            <soft-limit-low value="-180.0" units="Millimeters"/>
+            <soft-limit-high value="180.0" units="Millimeters"/>
+            <safe-zone-low value="0.0" units="Millimeters"/>
+            <safe-zone-high value="0.0" units="Millimeters"/>
+            <feedrate-per-second value="3333.3333333333335" units="Millimeters"/>
+            <acceleration-per-second-2 value="6666.666666666667" units="Millimeters"/>
+            <jerk-per-second-3 value="0.0" units="Millimeters"/>
+            <resolution>1.0E-4</resolution>
+         </axis>
+         <axis class="org.openpnp.machine.reference.axis.ReferenceControllerAxis" id="C3" name="C Nozzle 3" type="Rotation" driver-id="DRV187307950f5042f4" letter="C3" backlash-compensation-method="None" backlash-speed-factor="0.25" limit-rotation="true" wrap-around-rotation="false" invert-linear-rotational="false" soft-limit-low-enabled="false" soft-limit-high-enabled="false" safe-zone-low-enabled="false" safe-zone-high-enabled="false" version="2.0">
+            <home-coordinate value="0.0" units="Millimeters"/>
+            <acceptable-tolerance value="0.025" units="Millimeters"/>
+            <backlash-offset value="0.0" units="Millimeters"/>
+            <sneak-up-offset value="0.0" units="Millimeters"/>
+            <soft-limit-low value="-180.0" units="Millimeters"/>
+            <soft-limit-high value="180.0" units="Millimeters"/>
+            <safe-zone-low value="0.0" units="Millimeters"/>
+            <safe-zone-high value="0.0" units="Millimeters"/>
+            <feedrate-per-second value="3333.3333333333335" units="Millimeters"/>
+            <acceleration-per-second-2 value="6666.666666666667" units="Millimeters"/>
+            <jerk-per-second-3 value="0.0" units="Millimeters"/>
+            <resolution>1.0E-4</resolution>
+         </axis>
+         <axis class="org.openpnp.machine.reference.axis.ReferenceControllerAxis" id="C4" name="C Nozzle 4" type="Rotation" driver-id="DRV187307950f5042f4" letter="C4" backlash-compensation-method="None" backlash-speed-factor="0.25" limit-rotation="true" wrap-around-rotation="false" invert-linear-rotational="false" soft-limit-low-enabled="false" soft-limit-high-enabled="false" safe-zone-low-enabled="false" safe-zone-high-enabled="false" version="2.0">
+            <home-coordinate value="0.0" units="Millimeters"/>
+            <acceptable-tolerance value="0.025" units="Millimeters"/>
+            <backlash-offset value="0.0" units="Millimeters"/>
+            <sneak-up-offset value="0.0" units="Millimeters"/>
+            <soft-limit-low value="-180.0" units="Millimeters"/>
+            <soft-limit-high value="180.0" units="Millimeters"/>
+            <safe-zone-low value="0.0" units="Millimeters"/>
+            <safe-zone-high value="0.0" units="Millimeters"/>
+            <feedrate-per-second value="3333.3333333333335" units="Millimeters"/>
+            <acceleration-per-second-2 value="6666.666666666667" units="Millimeters"/>
+            <jerk-per-second-3 value="0.0" units="Millimeters"/>
+            <resolution>1.0E-4</resolution>
+         </axis>
+      </axes>
+      <heads>
+         <head class="org.openpnp.machine.reference.ReferenceHead" id="H1" name="H1" vacuum-pump-control="PartOn" pump-on-wait-milliseconds="0" visual-homing-method="ResetToHomeLocation" nozzle-solution="Standalone" nozzle-solutions-multiplier="1">
+            <nozzles>
+               <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" axis-X-id="AXS17d226e240d84b80" axis-Y-id="AXS17d226e240e0ed44" axis-Z-id="Z1" axis-rotation-id="AXS17d226e240e49020" id="N1" name="N1" rotation-mode="AbsolutePartAngle" aligning-rotation-mode="false" max-pick-articulation-angle="15.0" max-alignment-articulation-angle="30.0" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" changer-enabled="false" nozzle-tip-changed-on-manual-feed="false" enable-dynamic-safe-z="false" blow-off-closing-valve="true" version="200" limit-rotation="true">
+                  <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
+                  <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+                  <manual-nozzle-tip-change-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+               </nozzle>
+               <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" axis-X-id="AXS17d226e240d84b80" axis-Y-id="AXS17d226e240e0ed44" axis-Z-id="Z2" axis-rotation-id="AXS17d226e240e49020" id="N2" name="N2" rotation-mode="AbsolutePartAngle" aligning-rotation-mode="false" max-pick-articulation-angle="15.0" max-alignment-articulation-angle="30.0" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" changer-enabled="false" nozzle-tip-changed-on-manual-feed="false" enable-dynamic-safe-z="false" blow-off-closing-valve="true" version="200" limit-rotation="true">
+                  <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
+                  <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+                  <manual-nozzle-tip-change-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+               </nozzle>
+               <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" axis-X-id="AXS17d226e240d84b80" axis-Y-id="AXS17d226e240e0ed44" axis-Z-id="Z3" axis-rotation-id="AXS17d226e240e49020" id="N3" name="N3" rotation-mode="AbsolutePartAngle" aligning-rotation-mode="false" max-pick-articulation-angle="15.0" max-alignment-articulation-angle="30.0" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" changer-enabled="false" nozzle-tip-changed-on-manual-feed="false" enable-dynamic-safe-z="false" blow-off-closing-valve="true" version="200" limit-rotation="true">
+                  <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
+                  <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+                  <manual-nozzle-tip-change-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+               </nozzle>
+               <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" axis-X-id="AXS17d226e240d84b80" axis-Y-id="AXS17d226e240e0ed44" axis-Z-id="Z4" axis-rotation-id="AXS17d226e240e49020" id="N4" name="N4" rotation-mode="AbsolutePartAngle" aligning-rotation-mode="false" max-pick-articulation-angle="15.0" max-alignment-articulation-angle="30.0" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" changer-enabled="false" nozzle-tip-changed-on-manual-feed="false" enable-dynamic-safe-z="false" blow-off-closing-valve="true" version="200" limit-rotation="true">
+                  <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
+                  <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+                  <manual-nozzle-tip-change-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+               </nozzle>
+            </nozzles>
+            <actuators/>
+            <cameras>
+               <camera class="org.openpnp.machine.reference.camera.OpenPnpCaptureCamera" axis-X-id="AXS17d226e240d84b80" axis-Y-id="AXS17d226e240e0ed44" id="CAM1876b0d92f8daa48" name="OpenPnpCaptureCamera" looking="Down" auto-visible="false" shown-in-multi-camera-view="true" before-capture-light-on="true" user-action-light-on="true" after-capture-light-off="false" anti-glare-light-off="false" enable-units-per-pixel-3-d="false" auto-view-plane-z="false" max-relative-motion="0.05" min-motion-template-match-score="0.9" min-contrast-range="16.0" settle-method="FixedTime" settle-time-ms="250" settle-timeout-ms="500" settle-threshold="0.0" settle-debounce="0" settle-full-color="false" settle-gaussian-blur="0" settle-gradients="false" settle-mask-circle="0.0" settle-contrast-enhance="0.0" settle-diagnostics="false" fps="5.0" suspend-preview-in-tasks="false" capture-try-count="4" capture-try-timeout-ms="2000" rotation="0.0" flip-x="false" flip-y="false" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" red-balance="1.0" green-balance="1.0" blue-balance="1.0" red-gamma="1.0" green-gamma="1.0" blue-gamma="1.0" deinterlace="false" light-actuator-id="ACT1876b0beb7879488" allow-machine-actuators="true" focus-sensing-method="None" white-balance-lead-fractile="0.8" white-balance-clip-fractile="0.99" white-balance-gamma-fractile="0.5" unique-id="USB Camera \\?\usb#vid_0c45&amp;pid_636d&amp;mi_00#6&amp;3171a958&amp;0&amp;0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global" format-id="0" freeze-properties="false">
+                  <units-per-pixel units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+                  <default-z value="0.0" units="Millimeters"/>
+                  <vision-provider class="org.openpnp.machine.reference.vision.OpenCvVisionProvider"/>
+                  <roaming-radius value="0.0" units="Millimeters"/>
+                  <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+                  <calibration enabled="false">
+                     <camera-matrix length="9">0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0</camera-matrix>
+                     <distortion-coefficients length="5">0.0, 0.0, 0.0, 0.0, 0.0</distortion-coefficients>
+                  </calibration>
+                  <advanced-calibration enabled="false" overriding-old-transforms-and-distortion-correction-settings="false" valid="false" data-available="false" alpha-percent="100" rotation-error-z="0.0" rotation-error-y="0.0" rotation-error-x="0.0" rms-error="0.0" desired-radial-lines-per-test-pattern="32" test-pattern-fill-fraction="0.9" walking-loop-gain="0.5" approximate-camera-f="1000.0" mirrored="1.0" apparent-motion-direction="1.0" width-fov="0.0" height-fov="0.0" virtual-width-fov="0.0" virtual-height-fov="0.0" disable-tilt-correction="false" disable-distortion-correction="false" disable-tangential-distortion-correction="true" version="1.5">
+                     <camera-matrix length="9">0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0</camera-matrix>
+                     <distortion-coefficients length="5">0.0, 0.0, 0.0, 0.0, 0.0</distortion-coefficients>
+                     <pipeline>
+                        <stages>
+                           <cv-stage class="org.openpnp.vision.pipeline.stages.ImageCapture" name="image" enabled="true" default-light="true" settle-option="SettleFullArea" count="1"/>
+                           <cv-stage class="org.openpnp.vision.pipeline.stages.DetectCircularSymmetry" name="detect_circle" enabled="true" min-diameter="18" max-diameter="25" max-distance="100" search-width="0" search-height="0" max-target-count="1" min-symmetry="1.2" corr-symmetry="0.0" outer-margin="0.1" inner-margin="0.1" sub-sampling="8" super-sampling="8" symmetry-score="OverallVarianceVsRingVarianceSum" property-name="DetectCircularSymmetry" diagnostics="false" heat-map="false"/>
+                           <cv-stage class="org.openpnp.vision.pipeline.stages.ConvertModelToKeyPoints" name="results" enabled="true" model-stage-name="detect_circle"/>
+                        </stages>
+                     </pipeline>
+                     <virtual-camera-matrix length="9">1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0</virtual-camera-matrix>
+                     <rectification-matrix length="9">1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0</rectification-matrix>
+                     <vector-from-mach-to-phy-cam-in-mach-ref-frame length="3">0.0, 0.0, 0.0</vector-from-mach-to-phy-cam-in-mach-ref-frame>
+                     <unit-vector-phy-cam-Z-in-mach-ref-frame length="3">0.0, 0.0, 0.0</unit-vector-phy-cam-Z-in-mach-ref-frame>
+                     <vector-from-mach-to-vir-cam-in-mach-ref-frame length="3">0.0, 0.0, 0.0</vector-from-mach-to-vir-cam-in-mach-ref-frame>
+                     <vector-from-phy-cam-to-desired-principal-point-in-phy-cam-ref-frame length="3">0.0, 0.0, 0.0</vector-from-phy-cam-to-desired-principal-point-in-phy-cam-ref-frame>
+                     <saved-test-pattern-3-d-points-list length="0"/>
+                     <saved-test-pattern-image-points-list length="0"/>
+                     <modeled-test-pattern-image-points-list length="0"/>
+                     <outlier-points length="0"/>
+                     <trial-step value="0.5" units="Millimeters"/>
+                     <calibrated-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+                  </advanced-calibration>
+                  <focus-provider class="org.openpnp.machine.reference.camera.AutoFocusProvider" averaged-frames="1" focus-speed="0.5" show-diagnostics="true">
+                     <focal-resolution value="0.05" units="Millimeters"/>
+                  </focus-provider>
+                  <back-light-compensation property="BackLightCompensation" value="1" auto="false"/>
+                  <brightness property="Brightness" value="0" auto="false"/>
+                  <contrast property="Contrast" value="32" auto="false"/>
+                  <exposure property="Exposure" value="-6" auto="true"/>
+                  <focus property="Focus" value="1" auto="false"/>
+                  <gain property="Gain" value="15" auto="false"/>
+                  <gamma property="Gamma" value="72" auto="false"/>
+                  <hue property="Hue" value="0" auto="false"/>
+                  <power-line-frequency property="PowerLineFrequency" value="1" auto="false"/>
+                  <saturation property="Saturation" value="0" auto="false"/>
+                  <sharpness property="Sharpness" value="3" auto="false"/>
+                  <white-balance property="WhiteBalance" value="4600" auto="true"/>
+                  <zoom property="Zoom"/>
+               </camera>
+            </cameras>
+            <park-location units="Millimeters" x="-100.0" y="100.0" z="0.0" rotation="0.0"/>
+            <soft-limits-enabled>false</soft-limits-enabled>
+            <homing-fiducial-location units="Millimeters" x="-241.19" y="83.31" z="0.0" rotation="0.0"/>
+            <calibration-primary-fiducial-location units="Millimeters" x="-241.19" y="83.31" z="0.0" rotation="0.0"/>
+            <calibration-secondary-fiducial-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            <calibration-primary-fiducial-diameter value="1.0" units="Millimeters"/>
+         </head>
+      </heads>
+      <signalers/>
+      <feeders/>
+      <cameras/>
+      <actuators>
+         <actuator class="org.openpnp.machine.reference.ReferenceActuator" version="1.1" id="ACT1876b0beb7879488" name="Lights-Down" value-type="Boolean" value-type-confirmed="false" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" coordinated-before-actuate="true" coordinated-after-actuate="false" coordinated-before-read="true" coordinated-before-actuate-enum="WaitForStillstand" coordinated-after-actuate-enum="None" coordinated-before-read-enum="WaitForStillstand" enabled-actuation="AssumeUnknown" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
+            <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+         </actuator>
+         <actuator class="org.openpnp.machine.reference.ReferenceActuator" version="1.1" id="ACT1876b0beb8df567c" name="Lights-Up" value-type="Boolean" value-type-confirmed="false" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" coordinated-before-actuate="true" coordinated-after-actuate="false" coordinated-before-read="true" coordinated-before-actuate-enum="WaitForStillstand" coordinated-after-actuate-enum="None" coordinated-before-read-enum="WaitForStillstand" enabled-actuation="AssumeUnknown" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
+            <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+         </actuator>
+         <actuator class="org.openpnp.machine.reference.ReferenceActuator" version="1.1" id="ACT1876b0beb8e3112c" name="Rails" value-type="Boolean" value-type-confirmed="false" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" coordinated-before-actuate="true" coordinated-after-actuate="false" coordinated-before-read="true" coordinated-before-actuate-enum="WaitForStillstand" coordinated-after-actuate-enum="None" coordinated-before-read-enum="WaitForStillstand" enabled-actuation="AssumeUnknown" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
+            <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+         </actuator>
+         <actuator class="org.openpnp.machine.reference.ReferenceActuator" version="1.1" id="ACT1876b0beb8e48638" name="ReleaseC" value-type="Boolean" value-type-confirmed="false" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" coordinated-before-actuate="true" coordinated-after-actuate="false" coordinated-before-read="true" coordinated-before-actuate-enum="WaitForStillstand" coordinated-after-actuate-enum="None" coordinated-before-read-enum="WaitForStillstand" enabled-actuation="AssumeUnknown" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
+            <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+         </actuator>
+      </actuators>
+      <part-alignments>
+         <part-alignment class="org.openpnp.machine.reference.vision.ReferenceBottomVision" bottom-vision-id="BVS_Stock" enabled="false" pre-rotate="false" max-vision-passes="3" max-angular-offset="10.0" test-alignment-angle="0.0">
+            <max-linear-offset value="1.0" units="Millimeters"/>
+         </part-alignment>
+      </part-alignments>
+      <drivers>
+         <driver class="org.openpnp.machine.neoden4.NeoDen4Driver" id="DRV187307950f5042f4" name="NeoDen4Driver" motion-control-type="ToolpathFeedRate" communications="serial" connection-keep-alive="false" sync-initial-location="false" allow-unhomed-motion="false" units="Millimeters" timeout-milliseconds="5000" connect-wait-time-milliseconds="3000" home-coordinate-x="-437.0" home-coordinate-y="437.0" scale-factor-x="1.0501" scale-factor-y="1.04947526">
+            <serial line-ending-type="LF" port-name="COM3" baud="115200" flow-control="Off" data-bits="Eight" stop-bits="One" parity="None" set-dtr="false" set-rts="false" name="SerialPortCommunications"/>
+            <tcp line-ending-type="LF" ip-address="127.0.0.1" port="23" name="TcpCommunications"/>
+            <simulated line-ending-type="LF"/>
+         </driver>
+      </drivers>
+      <discard-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+      <default-board-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+      <properties>
+         <entry>
+            <string>CameraCalibrationProcessProperties</string>
+            <object class="org.openpnp.gui.processes.CalibrateCameraProcess$CameraCalibrationProcessProperties">
+               <max-allowed-pixel-step-factor>0.08333333333333333</max-allowed-pixel-step-factor>
+               <min-allowed-pixel-step-factor>0.027777777777777776</min-allowed-pixel-step-factor>
+               <change-mask-threshold>3</change-mask-threshold>
+               <mask-growth-threshold-factor>0.7</mask-growth-threshold-factor>
+               <mask-shrink-thresholdfactor>0.1</mask-shrink-thresholdfactor>
+               <mask-growth-factor>0.1</mask-growth-factor>
+               <mask-shrinkfactor>0.05</mask-shrinkfactor>
+               <initial-mask-diameter-fraction>0.25</initial-mask-diameter-fraction>
+               <centering-diameter-fraction>0.5</centering-diameter-fraction>
+               <max-error-count>15</max-error-count>
+               <default-detection-diameter>25</default-detection-diameter>
+               <default-up-looking-secondary-offset-Z-mm>2.0</default-up-looking-secondary-offset-Z-mm>
+            </object>
+         </entry>
+         <entry>
+            <string>Welcome2_0_Dialog_Shown</string>
+            <object class="java.lang.Boolean">true</object>
+         </entry>
+      </properties>
+      <nozzle-tips/>
+      <pnp-job-processor class="org.openpnp.machine.reference.ReferencePnpJobProcessor" job-order="NozzleTips" max-vision-retries="3" stepping-to-next-motion="true" optimize-multiple-nozzles="true" allow-immediate-nozzle-tip-calibration="false" fiducial-level="1" pre-rotate-all-nozzles="true">
+         <planner class="org.openpnp.machine.reference.ReferencePnpJobProcessor$SimplePnpJobPlanner" strategy="Minimize"/>
+      </pnp-job-processor>
+      <fiducial-locator class="org.openpnp.machine.reference.vision.ReferenceFiducialLocator" fiducial-vision-id="FVS_Stock" enabled-averaging="false">
+         <max-distance value="4.0" units="Millimeters"/>
+         <tolerances>
+            <scaling-tolerance>0.05</scaling-tolerance>
+            <shearing-tolerance>0.05</shearing-tolerance>
+            <board-location-tolerance value="5.0" units="Millimeters"/>
+         </tolerances>
+      </fiducial-locator>
+      <motion-planner class="org.openpnp.machine.reference.driver.NullMotionPlanner" maximum-plan-history="60.0"/>
+      <home-after-enabled>false</home-after-enabled>
+      <park-after-homed>false</park-after-homed>
+      <unsafe-Z-roaming-distance value="10.0" units="Millimeters"/>
+      <pool-scripting-engines>false</pool-scripting-engines>
+      <auto-load-most-recent-job>false</auto-load-most-recent-job>
+      <solutions show-indicator="true" target-milestone="Connect">
+         <dismissed-solutions class="java.util.HashSet"/>
+         <solved-solutions class="java.util.HashSet"/>
+      </solutions>
+      <visual-solutions min-symmetry="1.5" sub-sampling="8" super-sampling="4" symmetry-score="OverallVarianceVsRingVarianceSum" diagnostics-milliseconds="4000" max-camera-relative-fiducial-area-diameter="0.2" max-camera-relative-subject-diameter="0.7" zero-knowledge-displacement-ratio="0.2" zero-knowledge-displacement-mm="1.0" fiducials-minimum-Z-offset-mm="2.0" zero-knowledge-fiducial-locator-passes="3" fiducial-margin="1.1" zero-knowledge-runout-compensation-shots="2" zero-knowledge-auto-focus-depth-mm="2.0" zero-knowledge-backlash-speed="0.2" zero-knowledge-settle-time-ms="600" settle-wanted-resolution-mm="0.05" settle-acceptable-compute-time="25.0" settle-maximum-pixel-diff="8.0" settle-test-move-mm="1.0">
+         <zero-knowledge-backlash-offsets units="Millimeters" x="-1.0" y="-1.0" z="0.0" rotation="-5.0"/>
+      </visual-solutions>
+      <calibration-solutions backlash-calibration-passes="4" error-dampening="0.9" backlash-test-move-mm="10.0" backlash-test-move-large-mm="90.0" step-test-mm="1.0" max-sneak-up-offset-mm="2.5" acceptable-sneak-up-offset-mm="0.8" backlash-distance-factor="1.4142135623730951" nozzle-offset-angles="6" extra-vacuum-dwell-ms="300" machine-settle-ms="500" up-looking-secondary-offset-Z-mm="2.0" automation-level="2">
+         <backlash-probing-speeds length="5">0.25, 0.33, 0.5, 0.75, 1.0</backlash-probing-speeds>
+      </calibration-solutions>
+   </machine>
+</openpnp-machine>
