@@ -143,7 +143,7 @@
          </axis>
       </axes>
       <heads>
-         <head class="org.openpnp.machine.reference.ReferenceHead" id="H1" name="H1" vacuum-pump-control="PartOn" pump-on-wait-milliseconds="0" visual-homing-method="None" nozzle-solution="Standalone" nozzle-solutions-multiplier="1">
+         <head class="org.openpnp.machine.reference.ReferenceHead" id="H1" name="H1" vacuum-pump-control="PartOn" pump-on-wait-milliseconds="0" visual-homing-method="ResetToFiducialLocation" nozzle-solution="Standalone" nozzle-solutions-multiplier="1">
             <nozzles>
                <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" axis-X-id="AXS17d226e240d84b80" axis-Y-id="AXS17d226e240e0ed44" axis-Z-id="Z1" axis-rotation-id="C1" id="N1" name="N1" rotation-mode="AbsolutePartAngle" aligning-rotation-mode="false" max-pick-articulation-angle="15.0" max-alignment-articulation-angle="30.0" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" changer-enabled="false" nozzle-tip-changed-on-manual-feed="false" enable-dynamic-safe-z="false" blow-off-closing-valve="true" version="200" limit-rotation="true">
                   <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
@@ -242,7 +242,7 @@
             </cameras>
             <park-location units="Millimeters" x="-59.9" y="291.2" z="0.0" rotation="0.0"/>
             <soft-limits-enabled>false</soft-limits-enabled>
-            <homing-fiducial-location units="Millimeters" x="-241.19" y="83.31" z="0.0" rotation="0.0"/>
+            <homing-fiducial-location units="Millimeters" x="-59.69" y="210.15" z="0.0" rotation="0.0"/>
             <calibration-primary-fiducial-location units="Millimeters" x="-59.9" y="291.2" z="0.0" rotation="0.0"/>
             <calibration-secondary-fiducial-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             <calibration-primary-fiducial-diameter value="5.0" units="Millimeters"/>
