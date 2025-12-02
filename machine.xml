@@ -188,7 +188,58 @@
                   <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                </actuator>
             </actuators>
-            <cameras/>
+            <cameras>
+               <camera class="org.openpnp.machine.reference.camera.OpenPnpCaptureCamera" id="CAM187d6fd8e084a10d" name="OpenPnpCaptureCamera" looking="Down" auto-visible="false" shown-in-multi-camera-view="true" before-capture-light-on="true" user-action-light-on="true" after-capture-light-off="false" anti-glare-light-off="false" enable-units-per-pixel-3-d="false" auto-view-plane-z="false" max-relative-motion="0.05" min-motion-template-match-score="0.9" min-contrast-range="16.0" settle-time-ms="250" settle-timeout-ms="500" settle-threshold="0.0" settle-debounce="0" settle-full-color="false" settle-gaussian-blur="0" settle-gradients="false" settle-mask-circle="0.0" settle-contrast-enhance="0.0" settle-diagnostics="false" fps="5.0" suspend-preview-in-tasks="false" capture-try-count="4" capture-try-timeout-ms="2000" rotation="0.0" flip-x="false" flip-y="false" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" red-balance="1.0" green-balance="1.0" blue-balance="1.0" red-gamma="1.0" green-gamma="1.0" blue-gamma="1.0" deinterlace="false" allow-machine-actuators="false" focus-sensing-method="None" white-balance-lead-fractile="0.8" white-balance-clip-fractile="0.99" white-balance-gamma-fractile="0.5" unique-id="USB 2.0 Camera: USB Camera usb-0000:00:14.0-8" format-id="0" freeze-properties="false">
+                  <units-per-pixel units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+                  <default-z value="0.0" units="Millimeters"/>
+                  <vision-provider class="org.openpnp.machine.reference.vision.OpenCvVisionProvider"/>
+                  <roaming-radius value="0.0" units="Millimeters"/>
+                  <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+                  <calibration enabled="false">
+                     <camera-matrix length="9">0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0</camera-matrix>
+                     <distortion-coefficients length="5">0.0, 0.0, 0.0, 0.0, 0.0</distortion-coefficients>
+                  </calibration>
+                  <advanced-calibration enabled="false" overriding-old-transforms-and-distortion-correction-settings="false" valid="false" data-available="false" alpha-percent="100" rotation-error-z="0.0" rotation-error-y="0.0" rotation-error-x="0.0" rms-error="0.0" desired-radial-lines-per-test-pattern="32" test-pattern-fill-fraction="0.9" walking-loop-gain="0.5" approximate-camera-f="1000.0" mirrored="1.0" apparent-motion-direction="1.0" width-fov="0.0" height-fov="0.0" virtual-width-fov="0.0" virtual-height-fov="0.0" disable-tilt-correction="false" disable-distortion-correction="false" disable-tangential-distortion-correction="true" version="1.5">
+                     <camera-matrix length="9">0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0</camera-matrix>
+                     <distortion-coefficients length="5">0.0, 0.0, 0.0, 0.0, 0.0</distortion-coefficients>
+                     <pipeline>
+                        <stages>
+                           <cv-stage class="org.openpnp.vision.pipeline.stages.ImageCapture" name="image" enabled="true" default-light="true" settle-option="SettleFullArea" count="1"/>
+                           <cv-stage class="org.openpnp.vision.pipeline.stages.DetectCircularSymmetry" name="detect_circle" enabled="true" min-diameter="18" max-diameter="25" max-distance="100" search-width="0" search-height="0" max-target-count="1" min-symmetry="1.2" corr-symmetry="0.0" outer-margin="0.1" inner-margin="0.1" sub-sampling="8" super-sampling="8" symmetry-score="OverallVarianceVsRingVarianceSum" property-name="DetectCircularSymmetry" diagnostics="false" heat-map="false"/>
+                           <cv-stage class="org.openpnp.vision.pipeline.stages.ConvertModelToKeyPoints" name="results" enabled="true" model-stage-name="detect_circle"/>
+                        </stages>
+                     </pipeline>
+                     <virtual-camera-matrix length="9">1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0</virtual-camera-matrix>
+                     <rectification-matrix length="9">1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0</rectification-matrix>
+                     <vector-from-mach-to-phy-cam-in-mach-ref-frame length="3">0.0, 0.0, 0.0</vector-from-mach-to-phy-cam-in-mach-ref-frame>
+                     <unit-vector-phy-cam-Z-in-mach-ref-frame length="3">0.0, 0.0, 0.0</unit-vector-phy-cam-Z-in-mach-ref-frame>
+                     <vector-from-mach-to-vir-cam-in-mach-ref-frame length="3">0.0, 0.0, 0.0</vector-from-mach-to-vir-cam-in-mach-ref-frame>
+                     <vector-from-phy-cam-to-desired-principal-point-in-phy-cam-ref-frame length="3">0.0, 0.0, 0.0</vector-from-phy-cam-to-desired-principal-point-in-phy-cam-ref-frame>
+                     <saved-test-pattern-3-d-points-list length="0"/>
+                     <saved-test-pattern-image-points-list length="0"/>
+                     <modeled-test-pattern-image-points-list length="0"/>
+                     <outlier-points length="0"/>
+                     <trial-step value="0.5" units="Millimeters"/>
+                     <calibrated-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+                  </advanced-calibration>
+                  <focus-provider class="org.openpnp.machine.reference.camera.AutoFocusProvider" averaged-frames="1" focus-speed="0.5" show-diagnostics="true">
+                     <focal-resolution value="0.05" units="Millimeters"/>
+                  </focus-provider>
+                  <back-light-compensation property="BackLightCompensation" value="1"/>
+                  <brightness property="Brightness" value="0"/>
+                  <contrast property="Contrast" value="32"/>
+                  <exposure property="Exposure" value="157" auto="true"/>
+                  <focus property="Focus" value="1" auto="false"/>
+                  <gain property="Gain"/>
+                  <gamma property="Gamma" value="72"/>
+                  <hue property="Hue" value="0"/>
+                  <power-line-frequency property="PowerLineFrequency" value="1"/>
+                  <saturation property="Saturation" value="0"/>
+                  <sharpness property="Sharpness" value="3"/>
+                  <white-balance property="WhiteBalance" value="4600" auto="true"/>
+                  <zoom property="Zoom"/>
+               </camera>
+            </cameras>
             <park-location units="Millimeters" x="-59.9" y="291.2" z="0.0" rotation="0.0"/>
             <soft-limits-enabled>false</soft-limits-enabled>
             <homing-fiducial-location units="Millimeters" x="-241.19" y="83.31" z="0.0" rotation="0.0"/>
@@ -380,7 +431,58 @@
             </vision>
          </feeder>
       </feeders>
-      <cameras/>
+      <cameras>
+         <camera class="org.openpnp.machine.reference.camera.OpenPnpCaptureCamera" id="CAM187d6fcda3af8de8" name="OpenPnpCaptureCamera" looking="Down" auto-visible="false" shown-in-multi-camera-view="true" before-capture-light-on="true" user-action-light-on="true" after-capture-light-off="false" anti-glare-light-off="false" enable-units-per-pixel-3-d="false" auto-view-plane-z="false" max-relative-motion="0.05" min-motion-template-match-score="0.9" min-contrast-range="16.0" settle-time-ms="250" settle-timeout-ms="500" settle-threshold="0.0" settle-debounce="0" settle-full-color="false" settle-gaussian-blur="0" settle-gradients="false" settle-mask-circle="0.0" settle-contrast-enhance="0.0" settle-diagnostics="false" fps="5.0" suspend-preview-in-tasks="false" capture-try-count="4" capture-try-timeout-ms="2000" rotation="0.0" flip-x="false" flip-y="false" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" red-balance="1.0" green-balance="1.0" blue-balance="1.0" red-gamma="1.0" green-gamma="1.0" blue-gamma="1.0" deinterlace="false" allow-machine-actuators="false" focus-sensing-method="None" white-balance-lead-fractile="0.8" white-balance-clip-fractile="0.99" white-balance-gamma-fractile="0.5" unique-id="USB 2.0 Camera: USB Camera usb-0000:01:00.0-4" format-id="0" freeze-properties="false">
+            <units-per-pixel units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            <default-z value="0.0" units="Millimeters"/>
+            <vision-provider class="org.openpnp.machine.reference.vision.OpenCvVisionProvider"/>
+            <roaming-radius value="0.0" units="Millimeters"/>
+            <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            <calibration enabled="false">
+               <camera-matrix length="9">0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0</camera-matrix>
+               <distortion-coefficients length="5">0.0, 0.0, 0.0, 0.0, 0.0</distortion-coefficients>
+            </calibration>
+            <advanced-calibration enabled="false" overriding-old-transforms-and-distortion-correction-settings="false" valid="false" data-available="false" alpha-percent="100" rotation-error-z="0.0" rotation-error-y="0.0" rotation-error-x="0.0" rms-error="0.0" desired-radial-lines-per-test-pattern="32" test-pattern-fill-fraction="0.9" walking-loop-gain="0.5" approximate-camera-f="1000.0" mirrored="1.0" apparent-motion-direction="1.0" width-fov="0.0" height-fov="0.0" virtual-width-fov="0.0" virtual-height-fov="0.0" disable-tilt-correction="false" disable-distortion-correction="false" disable-tangential-distortion-correction="true" version="1.5">
+               <camera-matrix length="9">0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0</camera-matrix>
+               <distortion-coefficients length="5">0.0, 0.0, 0.0, 0.0, 0.0</distortion-coefficients>
+               <pipeline>
+                  <stages>
+                     <cv-stage class="org.openpnp.vision.pipeline.stages.ImageCapture" name="image" enabled="true" default-light="true" settle-option="SettleFullArea" count="1"/>
+                     <cv-stage class="org.openpnp.vision.pipeline.stages.DetectCircularSymmetry" name="detect_circle" enabled="true" min-diameter="18" max-diameter="25" max-distance="100" search-width="0" search-height="0" max-target-count="1" min-symmetry="1.2" corr-symmetry="0.0" outer-margin="0.1" inner-margin="0.1" sub-sampling="8" super-sampling="8" symmetry-score="OverallVarianceVsRingVarianceSum" property-name="DetectCircularSymmetry" diagnostics="false" heat-map="false"/>
+                     <cv-stage class="org.openpnp.vision.pipeline.stages.ConvertModelToKeyPoints" name="results" enabled="true" model-stage-name="detect_circle"/>
+                  </stages>
+               </pipeline>
+               <virtual-camera-matrix length="9">1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0</virtual-camera-matrix>
+               <rectification-matrix length="9">1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0</rectification-matrix>
+               <vector-from-mach-to-phy-cam-in-mach-ref-frame length="3">0.0, 0.0, 0.0</vector-from-mach-to-phy-cam-in-mach-ref-frame>
+               <unit-vector-phy-cam-Z-in-mach-ref-frame length="3">0.0, 0.0, 0.0</unit-vector-phy-cam-Z-in-mach-ref-frame>
+               <vector-from-mach-to-vir-cam-in-mach-ref-frame length="3">0.0, 0.0, 0.0</vector-from-mach-to-vir-cam-in-mach-ref-frame>
+               <vector-from-phy-cam-to-desired-principal-point-in-phy-cam-ref-frame length="3">0.0, 0.0, 0.0</vector-from-phy-cam-to-desired-principal-point-in-phy-cam-ref-frame>
+               <saved-test-pattern-3-d-points-list length="0"/>
+               <saved-test-pattern-image-points-list length="0"/>
+               <modeled-test-pattern-image-points-list length="0"/>
+               <outlier-points length="0"/>
+               <trial-step value="0.5" units="Millimeters"/>
+               <calibrated-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            </advanced-calibration>
+            <focus-provider class="org.openpnp.machine.reference.camera.AutoFocusProvider" averaged-frames="1" focus-speed="0.5" show-diagnostics="true">
+               <focal-resolution value="0.05" units="Millimeters"/>
+            </focus-provider>
+            <back-light-compensation property="BackLightCompensation" value="1"/>
+            <brightness property="Brightness" value="0"/>
+            <contrast property="Contrast" value="32"/>
+            <exposure property="Exposure" value="157" auto="true"/>
+            <focus property="Focus" value="1" auto="false"/>
+            <gain property="Gain"/>
+            <gamma property="Gamma" value="72"/>
+            <hue property="Hue" value="0"/>
+            <power-line-frequency property="PowerLineFrequency" value="1"/>
+            <saturation property="Saturation" value="0"/>
+            <sharpness property="Sharpness" value="3"/>
+            <white-balance property="WhiteBalance" value="4600" auto="true"/>
+            <zoom property="Zoom"/>
+         </camera>
+      </cameras>
       <actuators>
          <actuator class="org.openpnp.machine.reference.ReferenceActuator" version="1.1" id="ACT1876b0beb7879488" name="Lights-Down" value-type="Boolean" value-type-confirmed="false" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" coordinated-before-actuate="true" coordinated-after-actuate="false" coordinated-before-read="true" coordinated-before-actuate-enum="WaitForStillstand" coordinated-after-actuate-enum="None" coordinated-before-read-enum="WaitForStillstand" enabled-actuation="AssumeUnknown" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
             <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
